@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio profesional de Mirco Nahuel Aguilar, Backend Developer especializado en desarrollo web y APIs con Node.js y Express.">
+  <meta name="keywords" content="Backend Developer, Node.js, Express.js, JavaScript, APIs REST, Desarrollo Backend, Desarrollo Web, Portfolio">
+  <meta name="author" content="Mirco Nahuel Aguilar">
+  <title>Mirco Aguilar | Backend Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">Mirco Aguilar</a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Tecnologías</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+
+        <li>
+          <button id="theme-toggle" class="theme-toggle">
+            <i class="bi bi-moon-fill"></i>
+          </button>
+        </li>
+      </ul>
+
+      <div class="menu-toggle">
+        <i class="bi bi-list"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="hero-subtitle">Hola, soy</p>
+        <h1>Mirco Nahuel Aguilar</h1>
+        <h2>Backend Developer</h2>
+        <p class="hero-description">
+          Desarrollando APIs y soluciones web enfocadas en backend con Node.js y Express.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contact" class="btn btn-secondary">Contactarme</a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/mircoaguilar" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/mircoaguilar/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mircoaguilar.dev@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/images/perfil.jpg" alt="Mirco Nahuel Aguilar" class="profile-image">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Sobre mí</h2>
+        <p>Formación, experiencia y enfoque profesional</p>
+      </div>
+
+<div class="about-content">
+  <p>
+    Soy desarrollador enfocado en backend y estudiante avanzado de la Tecnicatura Superior en Desarrollo de Software, actualmente finalizando mi formación académica mientras desarrollo proyectos web funcionales.
+  </p>
+
+  <p>
+    Trabajo principalmente con JavaScript, Node.js y Express, construyendo APIs, lógica de negocio y aplicaciones orientadas a resolver necesidades reales mediante soluciones mantenibles y escalables.
+  </p>
+
+  <p>
+    Complemento mi perfil con conocimientos de frontend, bases de datos relacionales, autenticación, diseño responsive y herramientas modernas de desarrollo como Git y Postman.
+  </p>
+
+  <p>
+    Me interesa seguir creciendo profesionalmente dentro del desarrollo backend, participando en equipos donde pueda aportar soluciones concretas, mejorar mis habilidades técnicas y adquirir experiencia en proyectos reales.
+  </p>
+</div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Tecnologías y herramientas</h2>
+        <p>Stack técnico y herramientas de desarrollo</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <ul>
+            <li>PHP</li>
+            <li>Laravel</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>APIs REST</li>
+            <li>Autenticación</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Base de datos</h3>
+          <ul>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Herramientas</h3>
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Proyectos destacados</h2>
+        <p>Experiencia práctica en soluciones reales</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-gallery">
+            <button class="gallery-btn prev"
+                    onclick="changeImage('kiosco', -1)">
+              &#10094;
+            </button>
+
+            <img
+              id="kiosco-image"
+              src="assets/images/proyectos/kiosco/01-login.png"
+              alt="Sistema de Gestión Comercial"
+            >
+
+            <button class="gallery-btn next"
+                    onclick="changeImage('kiosco', 1)">
+              &#10095;
+            </button>
+          </div>
+
+          <div class="gallery-counter">
+            <span id="kiosco-counter">1 / 8</span>
+          </div>
+
+          <div class="project-info">
+            <h3>Sistema de Gestión Comercial</h3>
+
+            <p>
+              Sistema web desarrollado para un cliente real. Incluye punto de venta (POS),
+              control de stock en tiempo real, gestión de productos y proveedores,
+              historial y reportes de ventas, ranking de productos más vendidos,
+              administración de usuarios con control de permisos e impresión de tickets.
+            </p>
+
+            <span>Node.js · Express · PostgreSQL · Bootstrap</span>
+
+            <div class="project-links">
+              <a
+                href="https://sistema-kiosco-web-tasting.onrender.com/login.html"
+                target="_blank"
+                class="btn btn-secondary"
+              >
+                Ver demo
+              </a>
+            </div>
+
+            <div class="demo-access">
+              <h4>Acceso de demostración</h4>
+
+              <p>
+                Usuario: <strong>demo.vendedor</strong><br>
+                Contraseña: <strong>demo123</strong>
+              </p>
+
+              <small>
+                Cuenta con permisos limitados. Permite realizar ventas y recorrer
+                las principales funcionalidades sin acceso a tareas administrativas
+                o modificaciones críticas de datos.
+              </small>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-gallery">
+            <button class="gallery-btn prev"
+                    onclick="changeImage('viajar', -1)">
+              &#10094;
+            </button>
+
+            <img
+              id="viajar-image"
+              src="assets/images/proyectos/viajar/01-hoteles.png"
+              alt="Proyecto ViajAR"
+            >
+
+            <button class="gallery-btn next"
+                    onclick="changeImage('viajar', 1)">
+              &#10095;
+            </button>
+          </div>
+
+          <div class="gallery-counter">
+            <span id="viajar-counter">1 / 17</span>
+          </div>
+          <div class="project-info">
+            <h3>ViajAR - Plataforma de Gestión Turística</h3>
+            <p>
+              Sistema web desarrollado como proyecto final académico para la gestión
+              integral de servicios turísticos. Incluye reservas de hoteles,
+              transporte y tours, carrito de compras, integración con Mercado Pago,
+              gestión de proveedores, auditorías y paneles administrativos.
+            </p>
+            <span>PHP · JavaScript · MySQL · MVC · HTML · CSS</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contacto</h2>
+        <p>Conectemos profesionalmente</p>
+      </div>
+
+      <div class="contact-links">
+        <a href="mailto:mircoaguilar.dev@gmail.com" class="contact-item">
+          <i class="bi bi-envelope-fill"></i>
+          <span>mircoaguilar.dev@gmail.com</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/mircoaguilar/" target="_blank" class="contact-item">
+          <i class="bi bi-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="https://github.com/mircoaguilar" target="_blank" class="contact-item">
+          <i class="bi bi-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+
+      <a href="assets/docs/cv-mirco-aguilar.pdf" class="btn btn-primary cv-button" download>
+        Descargar CV
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Mirco Nahuel Aguilar | Backend Developer</p>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox">
+
+    <span class="lightbox-close">&times;</span>
+
+    <div id="lightbox-counter" class="lightbox-counter">
+      1 / 17
+    </div>
+
+    <button class="lightbox-nav prev" id="lightbox-prev">
+      &#10094;
+    </button>
+
+    <img
+      id="lightbox-image"
+      class="lightbox-image"
+      src=""
+      alt="Captura ampliada"
+    >
+
+    <button class="lightbox-nav next" id="lightbox-next">
+      &#10095;
+    </button>
+
+  </div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
