@@ -211,19 +211,6 @@ img {
   justify-content: center;
 }
 
-.profile-placeholder {
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  font-size: 8rem;
-  box-shadow: var(--shadow);
-}
-
 .about {
   background-color: var(--light-bg);
 }
@@ -410,6 +397,7 @@ img {
   height: 100%;
   object-fit: cover;
   display: block;
+  cursor: zoom-in;
 }
 
 .gallery-btn {
@@ -500,10 +488,6 @@ img {
   user-select: none;
 }
 
-.project-gallery img {
-  cursor: zoom-in;
-}
-
 .lightbox-nav {
   position: absolute;
   top: 50%;
@@ -559,42 +543,20 @@ img {
   margin-top: 1rem;
   padding: 1rem;
   border-radius: 12px;
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-}
-
-.demo-access h4 {
-  margin-bottom: .5rem;
-  font-size: .95rem;
-}
-
-.demo-access p {
-  margin-bottom: .5rem;
-  line-height: 1.6;
-}
-
-.demo-access small {
-  display: block;
-  opacity: .8;
-  line-height: 1.5;
-}
-
-.demo-access {
-  margin-top: 1rem;
-  padding: 1rem;
-  border-radius: 12px;
-  background-color: var(--card-bg);
+  background-color: var(--white);
   border: 1px solid var(--border-color);
 }
 
 .demo-access h4 {
   margin-bottom: 0.75rem;
   font-size: 1rem;
+  color: var(--text-dark);
 }
 
 .demo-access p {
   margin-bottom: 0.75rem;
   line-height: 1.6;
+  color: var(--text-dark);
 }
 
 .demo-access small {
