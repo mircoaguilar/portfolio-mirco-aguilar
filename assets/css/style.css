@@ -579,6 +579,36 @@ img {
   line-height: 1.5;
 }
 
+.demo-access {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+.demo-access h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.demo-access p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.demo-access small {
+  display: block;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+.demo-warning {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+}
+
 #theme-toggle {
   background: transparent;
   border: none;
