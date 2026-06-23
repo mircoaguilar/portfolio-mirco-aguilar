@@ -40,4 +40,4 @@ Plataforma web orientada a la gestión integral de servicios turísticos, con re
 
 * **LinkedIn:** [linkedin.com/in/mircoaguilar](https://www.linkedin.com/in/mircoaguilar)
 * **GitHub:** [github.com/mircoaguilar](https://github.com/mircoaguilar)
-* **Email:** [mircoaguilar.dev@gmail.com](mailto:mircoaguilar.dev@gmail.com)
+* **Email:** [mircoaguilar.dev@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=mircoaguilar.dev@gmail.com)
